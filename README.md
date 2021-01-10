@@ -41,7 +41,20 @@ wb_trans: integer. | Number of white-black transitions in the original bitmap of
 prediction: integer. | Block classes : text (1), horizontal line (2), picture (3), vertical line (4) and graphic (5).
 
 ### Content of the project
+
 1. page-blocks.csv : Page Blocks Classification dataset 
 2. Blocks_classification.ipynb : jupyter notebook with data visualization and data modeling about the Page Blocks Classification dataset
 3. modelRandomForest.pickle, main.py, request.py : API random forest
 4. Blocks classification presentation.pdf : presentation explaining the purpose of the project and its results
+
+### API 
+
+The only endPoint for our Api is "/api_Block_Classification" for api services and take Json as parameters (its a Post endpoint).
+It will return the prediction (if its a text, a graphic or something else).
+In the request.py script, there is an example of a request. 
+
+### Conclusion 
+
+Our dataset was largely composed of texts. So, it was small and imbalanced. We managed to fixed imbalanced data by duplicate them. 
+We managed to score an accuracy of 100% which is very rare for a model.
+
