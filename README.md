@@ -43,5 +43,5 @@ prediction: integer. | Block classes : text (1), horizontal line (2), picture (3
 ### Content of the project
 1. page-blocks.csv : Page Blocks Classification dataset 
 2. Blocks_classification.ipynb : jupyter notebook with data visualization and data modeling about the Page Blocks Classification dataset
-3. api
+3. modelRandomForest.pickle, main.py, request.py : API random forest
 4. Blocks classification presentation.pdf : presentation explaining the purpose of the project and its results
